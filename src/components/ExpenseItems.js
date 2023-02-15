@@ -1,12 +1,26 @@
+import "./ExpenseItems.css";
+
 function ExpenseItem() {
-    return (
-        <div>
-            <h2>Expense items:</h2>
-            <div>Food Rs 10</div>
-            <div>Petrol Rs 100</div>
-            <div>Movies Rs 200</div>
-        </div>
-    );
+    const expenseTitle = 'Expense items';
+    const expenseItem1 = 'Food : Rs 10';
+    const expenseItem2 = 'Petrol : Rs 100';
+    const expenseItem3 = 'Movies : Rs 200';
+    const LocationOfExpenditure1 = 'Cuttack';
+    const LocationOfExpenditure2 = 'Bbsr';
+    const LocationOfExpenditure3 = 'Puri';
+
+  return (
+    <div>
+      <div className="expense-item">
+        <h2>{expenseTitle}</h2>
+      </div>
+      <div className="catagory">
+        <div>{expenseItem1}------({LocationOfExpenditure1})</div>
+        <div>{expenseItem2}------({LocationOfExpenditure2})</div>
+        <div>{expenseItem3}------({LocationOfExpenditure3})</div>
+      </div>
+    </div>
+  );
 }
 
 export default ExpenseItem;
