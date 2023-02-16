@@ -1,3 +1,4 @@
+import ExpenseDate from "./ExpenseDate";
 import "./ExpenseItems.css";
 
 function ExpenseItem(props) {
@@ -8,7 +9,15 @@ function ExpenseItem(props) {
         <h2>{props.title}</h2>
       </div>
       <div className="catagory">
-        <div>{props.name}<br></br>{props.item}<br></br>{props.location}</div>
+        <ExpenseDate date={props.date} />
+        <div>
+          {props.name}
+          <br></br>
+          {props.item}
+          <br></br>
+          {props.location}
+          <br></br>
+        </div>
       </div>
       {/* <div className="catagory2">
         <div>{props.item}------{props.location}</div>
