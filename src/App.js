@@ -1,8 +1,11 @@
+// import ExpenseDate from "./components/ExpenseDate";
+// import ExpenseDetails from "./components/ExpenseDetails";
+import React from 'react';
 import ExpenseItem from "./components/ExpenseItems";
 // import logo from './logo.svg';
 // import './App.css';
 
-function App() {
+const App = () => {
   const expenses = [
     {
       title: "Expense items",
@@ -24,6 +27,10 @@ function App() {
       name: "Manisha",
       item: "Movies : Rs 200",
       location: "Location : Puri (INOX)",
+    },
+    {
+      date: new Date(2023, 2, 17),
+      amount: "100 Rs",
     },
   ];
   return (
@@ -65,8 +72,19 @@ function App() {
         item={expenses[2].item}
         location={expenses[2].location}
       />
+      {/* <ExpenseDate date={expenses[3].date} />
+      {/* /* <ExpenseDetails amount={expenses[3].amount} /> */} */ */
     </div>
   );
 }
 
 export default App;
+
+// return React.createElement(
+//   'div', {className: expense-item},
+//   React.createElement(ExpenseDate, {date: this.props.date}),
+//   React.createElement('div', {},
+//   React.createElement('h1', {}, "Expense 1"),
+//   React.createElement('h1', {}, "Expense 1"),
+//   );
+// );
