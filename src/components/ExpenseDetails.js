@@ -1,9 +1,10 @@
+import ExpenseDate from './ExpenseDate';
 import './ExpenseDetails.css'
 
 function ExpenseDetails(props) {
-    const title = 'Expense Details';
-    const amount = 'Rs 100';
-    const date = new Date(2023, 2, 17);
+    // const title = 'Expense Details';
+    // const amount = 'Rs 100';
+    // const date = new Date(2023, 2, 17);
 
     return (
         <div className='expense-item'>
